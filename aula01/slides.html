@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Programação de Computadores: Aula 1</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <link rel="stylesheet" type="text/css" href="../template/css/roboto.css">
+    <link rel="stylesheet" type="text/css" href="../template/css/general.css">
+    <link rel="stylesheet" type="text/css" href="../template/css/code.css">
+    <link rel="stylesheet" type="text/css" href="../template/css/cover.css">
+    <link rel="stylesheet" type="text/css" href="../template/css/section.css">
+    <link rel="stylesheet" type="text/css" href="../template/css/elements.css">
+    <link rel="stylesheet" type="text/css" href="../template/css/table.css">
+    <link rel="stylesheet" type="text/css" href="../template/css/block.css">
+  </head>
+  <body>
+
+    <textarea id="source">
+
+class: cover-slide
+
+![:cover](
+Programação de Computadores
+Aula 1: Introdução à Disciplina
+Fernanda Passos
+../template/img/logo.svg
+)
+
+---
+
+class: section-slide
+
+# Estrutura da Disciplina
+
+---
+
+class: middle
+layout: true
+name: conteudo
+
+.title[
+{{slideTitle}}
+<hr>]
+
+---
+
+slideTitle: Informações Gerais
+
+![:block](Horários e Salas
+* Terças e quintas, das 11:00 às 13:00
+  * Sala 313
+* Parte do curso será em laboratório
+  * Sala ?
+)
+
+![:block](Contato:
+* fernanda@ic.uff.br
+* http://www.ic.uff.br/~fernanda
+  * Calendário.
+  * Material didático.
+  * Listas de Exercícios.
+  * **Avisos**.
+)
+
+---
+
+slideTitle: Objetivo do Curso
+
+* Noções Básicas de Programação de Computadores.
+  * Solução algorı́tmica de problemas.
+  * Estruturas básicas de algoritmos.
+  * Estruturas básicas de dados.
+  * Estudo da linguagem de programação Python.
+
+![:block](Espera-se que ao final da disciplina o aluno...
+  * Seja capaz de criar programas que resolvam problemas práticos.
+    * Pequeno e médio porte.
+  * Seja capaz de automatizar tarefas.
+)
+
+---
+
+slideTitle: Objetivo do Curso
+
+.col-2[
+* Intuição e resolução de problemas.
+* Programação Visual.
+  * Google Blockly Game.
+  * Google Blockly Code.
+* Noções Básicas de Algoritmos.
+  * Pseudo-linguagem.
+* Programação em Python.
+]
+
+.col-2[
+* Conceitos:
+    * Atribuição e Expressões.
+    * Entrada e Saı́da de Dados.
+    * Estruturas de Decisão.
+    * Estruturas de Repetição.
+    * Estruturas de dados multidi-mensionais.
+        * Listas, Tuplas e Dicionários (Python).
+    * Funções e modularização.
+    * Manipulação de Arquivos em Python.
+    * Módulos/bibliotecas de Python.
+]
+
+---
+
+slideTitle: Material de Apoio
+
+![:block](Programação visual:
+    * Google Blockly Game: https://blockly-games.appspot.com/
+    * Google Blockly Code: https://blockly-demo.appspot.com/static/demos/code/index.html?lang=pt-br
+)
+![:block](Algoritmos e Pseudo-linguagem:
+    * Livro: Harry Farrer et al. *Programação Estruturada de Computadores - Algoritmos
+Estruturados*. LTC, Terceira Edição, 2011.
+)
+![:block](Sobre Python:
+  * Livro: Nilo Menezes. *Introdução à Programação com Python*. Novatec, Segunda Edição, 2014.
+  * Links na Internet:
+    * http://python.org.br
+)
+
+---
+
+slideTitle: Avaliação
+
+#### Provas:
+* P1:
+* P2:
+
+#### Trabalhos:
+* Em grupo.
+* T1:
+* T2:
+
+#### Nota final (NF):
+<h5>
+$$NF = 80\% \times \frac{P1 + P2}{2} + 20\%  \times \frac{T1 + T2}{2}$$
+</h5>
+
+---
+
+class: section-slide
+layout: false
+
+# Motivação
+
+---
+
+template: conteudo
+layout: true
+
+---
+
+slideTitle: Por Que Aprender a Programar?
+
+#### Porque é útil
+* Habilidade de escrever programas é uma .alert[ferramenta].
+* Permite:
+    * Automatizar tarefas repetitivas.
+    * Concluir tarefas longas mais rapidamente.
+    * Fazer análises de sistemas complexos.
+
+#### Não apenas profissionalmente
+* Pode ajudar em tarefas domésticas, *hobbies*,...
+    * Planilha de controle financeiro,
+    * *web crawler* para concursos,
+    * sistema que atualiza tabela do campeonato brasileiro,
+    * ...
+
+---
+
+slideTitle: Grandes Exemplos: o LHC no CERN
+
+.col-2[
+* Maior acelerador de partı́culas do mundo.
+* Infra-estrutura para diversas pesquisas importantes na área de fı́sica de partı́culas.
+    * Parte integral de várias descobertas recentes.
+* Em funcionamento desde 2008.
+* Em 2012, dados de mais de 300 trilhões de colisões de partı́culas haviam sido processados.
+]
+
+.col-2[
+.center[![:imageS width:90%;](imagens/lhc.jpg)]
+* Dados são gerados a aproximadamente 300 GB/s.
+    * Tratamento manual é inviável.
+    * Programas especı́ficos foram desenvolvidos.
+]
+
+---
+
+slideTitle: Grandes Exemplos: Projeto Kepler
+
+.col-2[
+* Kepler: sonda espacial com o objetivo de
+detectar exoplanetas.
+* Metodologia (simplificada):
+    * Capturar imagens periódicas de um
+conjunto de estrelas.
+    * Medir intensidade de luz de cada estrela.
+    * Verificar se há queda periódica.
+
+.center[![:imageS width:65%;](imagens/Transit.png)]
+]
+
+.col-2[
+.center[![:imageS width:95%;](imagens/KeplerFieldOfView.jpg)]
+* Problema: campo de visão da Kepler é
+imenso.
+    * Permite a observação de mais de 150000 estrelas simultaneamente.
+    * Tarefa precisa ser automatizada.
+]
+
+---
+
+
+slideTitle: De forma mais Genérica
+
+- Fı́sicos e engenheiros trabalham em problemas complexos.
+    - Muitas variáveis, parâmetros...
+- Tarefas incluem cálculos, simulações.
+- Embora métodos sejam conhecidos, complexidade inviabiliza solução manual.
+- Algumas vezes, há softwares prontos disponı́veis.
+    - Em outros casos, o *programa precisa ser criado*.
+
+---
+
+class: section-slide
+layout: false
+
+# Alguns (Poucos) Conceitos Básicos
+
+---
+
+template: conteudo
+layout: true
+
+---
+
+slideTitle: O que é Programação de Computadores?
+
+- Habilidade de desenvolver códigos de programas que irão executar em um computador.
+- Exemplos de computadores:
+
+![:imageS width:25%;](imagens/notebook.jpg)
+![:imageS width:25%;](imagens/pc.jpeg)
+![:imageS width:25%;](imagens/smartphone.jpg)
+![:imageS width:20%;](imagens/rasp.jpg)
+![:imageS width:20%;](imagens/roteador.jpg)
+![:imageS width:20%;](imagens/tv.png)&nbsp&nbsp&nbsp
+![:imageS width:30%;](imagens/servidores.jpg)
+![:imageS width:20%;](imagens/videogame.jpeg)
+
+---
+
+slideTitle: Código de Programa de um Computador
+
+![:column 50%](
+- Diversos níveis de código:
+    - Máquina: 0's e 1'.
+    - Montagem ou *assembly*.
+    - **Alto nível**: descrito por linguagens de programação.
+        - Precisam ser traduzidas ou interpretadas para código de máquina.
+)
+
+![:column 50%](![:imageS width:80%;padding-left:10%](imagens/niveis.svg\))
+
+---
+
+slideTitle: Linguagem de Alto Nível
+
+- Indica aquilo que o computador deve fazer.
+    - Computador consegue entender se convertido para **linguagem de máquina**.
+    - E ser humano também!
+- Tentamos representar o conhecimento humano sobre um determinado problema em um programa de computador.
+- O ser humano é quem programa o computador!
+
+.center[
+![:imageS width:40%](imagens/brainandcomputer.jpg)
+]
+
+---
+
+slideTitle: O Que o Computador é Capaz de Fazer?
+
+- Cálculos matemáticos rapidamente.
+- Processamento lógico.
+- Processamento de sinais (frequências, áudios, imagens, vı́deos).
+- Inteligência artificial:
+    - conhecimento limitado.
+
+---
+
+slideTitle: O Que o Computador é Capaz de Fazer?
+
+#### Exemplo em reconhecimento de imagens:
+
+![:column 50%](
+Difícil reconhecer que há 2 cachorros.
+
+![:imageS width:80%;](imagens/imagem_confusa.jpg\)
+)
+
+![:column 50%](
+Fácil, se souber reconhecer 9 e 6.
+
+![:imageS width:100%;](imagens/encontre6.jpg\)
+)
+
+---
+
+slideTitle: Abstração de Dados
+
+![:column 47%](
+- Computadores manipulam bits.
+    - 0’s e 1’s.
+- Como representar elementos do mundo real?
+    - Pessoas, música, fotos...
+    - Circuitos eletrônicos, construções civis, átomos, moléculas...
+- Solução: .alert[abstração].
+    - Capacidade de transformar um conceito complexo em outro mais simples, mantendo as caracterı́sticas relevantes.
+)
+
+![:column 53%](
+.center[![:imageS width:80%;](imagens/Paris.jpg\)]
+
+- Exemplo em imagens:
+    - Capturar propriedades básicas:
+        - intensidade de cada “ponto”.
+    - Associá-las a números:
+        - e.g., de 0 a 255.
+        - Que são representáveis em binário.
+)
+
+---
+
+slideTitle: Componentes de um Programa
+
+#### Algoritmo:
+- Sequência de passos para solucionar um determinado problema.
+    - Exemplo: como chegar até a estação das barcas?
+        - Saia do campus pela Rua Passo da Pátria.
+        - Vire à esquerda, em direção à Praça da Cantareira.
+        - Siga a Av. Visconde do Rio Branco até a R. da Conceição.
+        - ...
+
+#### Estrutura de Dados:
+- Como organizar os dados a serem manipulados pelo algoritmo.
+    - Exemplo: manipulação de uma imagem colorida.
+        - A imagem é dividida em pixels.
+        - Cada pixel é representado por três valores de 0 a 255.
+            -  Intensidade de vermelho, verde e azul.
+
+---
+
+slideTitle: Etapas de Criação de um Programa
+
+1. Análise do problema.
+    - Entender o problema.
+2. Projeto do algoritmo.
+    - Desenvolver lógica para solucionar o problema computacionalmente.
+3. Programação.
+    - Escrita do algoritmo em linguagem de programação de alto nível.
+4. Teste e Prova.
+    - Verificar se o programa está correto.
+
+---
+
+slideTitle: Em Nosso Curso Estudaremos...
+
+![:column 50%](
+
+#### Algoritmos:
+- Linguagem de programação visual.
+
+.center[![:imageS width:60%;](imagens/googleBlockly.png\)]
+
+- Pseudolinguagem.
+
+.center[![:imageS width:70%;](imagens/pseudocodigo.png\)]
+)
+
+![:column 50%](
+#### Programação:
+- Existem várias linguagens de programação!
+- Usaremos Python.
+    - Versão 3...
+
+.center[![:imageS width:70%;](imagens/wordcloud.png\)]
+)
+
+---
+
+slideTitle: Próxima aula...
+
+- Blockly game
+
+.center[![:imageS width:45%;](imagens/blocklygame2.png)]
+
+- Blockly code
+
+.center[![:imageS width:35%;](imagens/blocklycode.png)]
+
+
+    </textarea>
+
+    <script src="../template/js/remark-latest.min.js" type="text/javascript"></script>
+    <script src="../template/js/macros.js" type="text/javascript"></script>
+    <script src="../template/js/callbacks.js" type="text/javascript"></script>
+    <script src="../template/js/katex.min.js"></script>
+    <script src="../template/js/auto-render.min.js"></script>
+    <link rel="stylesheet" href="../template/css/katex.min.css">
+    <script type="text/javascript">
+      var renderMath = function() {
+        renderMathInElement(document.body, {delimiters: [
+           {left: "$$", right: "$$", display: true},
+           {left: "$", right: "$", display: false},
+           {left: "\\[", right: "\\]", display: true},
+           {left: "\\(", right: "\\)", display: false},
+        ]});
+      }
+      var slideshow = remark.create({highlightStyle: "github", highlightLines: "true", highlightSpans: "true", slideNumberFormat: onSlideCallback}, renderMath);
+    </script>
+</body>
+</html>

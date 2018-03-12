@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   inkscape:version="0.91 r13725"
+   version="1.1"
+   id="svg4176"
+   viewBox="0 0 744.09448819 1052.3622047"
+   height="297mm"
+   width="210mm"
+   sodipodi:docname="Bullets.svg">
+  <sodipodi:namedview
+     inkscape:window-maximized="1"
+     inkscape:window-y="25"
+     inkscape:window-x="0"
+     inkscape:window-height="975"
+     inkscape:window-width="1280"
+     showgrid="false"
+     inkscape:current-layer="layer1"
+     inkscape:document-units="px"
+     inkscape:cy="573.72502"
+     inkscape:cx="192.22638"
+     inkscape:zoom="2.3463565"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     borderopacity="1.0"
+     bordercolor="#666666"
+     pagecolor="#ffffff"
+     id="base" />
+  <defs
+     id="defs4178">
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient4597">
+      <stop
+         style="stop-color:#cbf7ee;stop-opacity:1"
+         offset="0"
+         id="stop4599" />
+      <stop
+         style="stop-color:#137562;stop-opacity:1"
+         offset="1"
+         id="stop4601" />
+    </linearGradient>
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient4597"
+       id="radialGradient4603"
+       cx="192.73306"
+       cy="308.0799"
+       fx="192.73306"
+       fy="308.0799"
+       r="90"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.19871465,1.0729066,-1.0386738,0.19237437,494.9298,14.946838)" />
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient4597"
+       id="radialGradient4613"
+       cx="181.94647"
+       cy="473.76767"
+       fx="181.94647"
+       fy="473.76767"
+       r="90"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(-0.00932565,2.0121167,-1.9843914,-0.00919718,1094.9137,70.438281)" />
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient4597"
+       id="radialGradient4880"
+       cx="433.74008"
+       cy="261.82117"
+       fx="433.74008"
+       fy="261.82117"
+       r="44.80127"
+       gradientTransform="matrix(0.11792122,2.7007168,-2.5805211,0.11267313,1045.0926,-919.38628)"
+       gradientUnits="userSpaceOnUse" />
+  </defs>
+  <metadata
+     id="metadata4181">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     id="layer1"
+     inkscape:groupmode="layer"
+     inkscape:label="Layer 1">
+    <circle
+       inkscape:export-ydpi="7.5"
+       inkscape:export-xdpi="7.5"
+       r="90"
+       cy="321.06015"
+       cx="257.55823"
+       id="path4184"
+       style="opacity:0.76399997;fill:url(#radialGradient4603);fill-opacity:1;stroke:none;stroke-width:0.2;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    <rect
+       style="opacity:0.76399997;fill:url(#radialGradient4613);fill-opacity:1;stroke:none;stroke-width:0.2;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect4605"
+       width="159.44882"
+       height="159.44882"
+       x="167.06754"
+       y="446.68964"
+       inkscape:export-xdpi="7.5"
+       inkscape:export-ydpi="7.5"
+       inkscape:export-filename="/home/fernanda/Documentos/UFF/2018.1/Slides/template/img/bullet2.png" />
+    <path
+       d="m 409.96321,245.83378 0,163.43618 141.53989,-81.71809 -141.53989,-81.71809 z"
+       style="fill:url(#radialGradient4880);fill-opacity:1;stroke:none;stroke-width:3.26872373"
+       inkscape:label="Triangle"
+       id="path4627"
+       inkscape:connector-curvature="0"
+       inkscape:export-xdpi="7.5"
+       inkscape:export-ydpi="7.5" />
+  </g>
+</svg>

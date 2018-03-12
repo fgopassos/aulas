@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Programação de Computadores: Aula 4</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <link rel="stylesheet" type="text/css" href="../template/css/roboto.css">
+    <link rel="stylesheet" type="text/css" href="../template/css/general.css">
+    <link rel="stylesheet" type="text/css" href="../template/css/code.css">
+    <link rel="stylesheet" type="text/css" href="../template/css/cover.css">
+    <link rel="stylesheet" type="text/css" href="../template/css/section.css">
+    <link rel="stylesheet" type="text/css" href="../template/css/elements.css">
+    <link rel="stylesheet" type="text/css" href="../template/css/table.css">
+    <link rel="stylesheet" type="text/css" href="../template/css/block.css">
+  </head>
+  <body>
+
+    <textarea id="source">
+
+class: cover-slide
+
+![:cover](
+Programação de Computadores
+Aula 4: Programação Visual - Condicionais
+Fernanda Passos
+../template/img/logo.svg
+)
+
+---
+
+class: section-slide
+
+# Programação Visual: Condicionais
+
+---
+
+class: middle
+layout: true
+name: conteudo
+
+.title[
+{{slideTitle}}
+<hr>]
+
+---
+
+slideTitle: Estruturas Condicionais
+
+- Em programação, .alert[**condicionais**] servem para alterar o fluxo de execução.
+- Dependendo de uma condição, executamos alguns comandos.
+    - Por exemplo, **se** a idade for menor que 18 anos, o acesso ao filme é proibido.
+- As condições são formadas .alert[**expressões lógicas**].
+- Expressões lógicas são caracterizadas por valores **verdadeiro/falso**.
+    - Por exemplo, "a idade for menor que 18 anos" é verdadeiro.
+- Vamos ver mais exemplos no Google Blockly Game.
+
+<!--
+.center[![:imageS width:40%;](imagens/criar_variavel.png)]
+-->
+
+---
+
+slideTitle: Google Blockly Game: Condicionais
+
+- Podemos notar condicionais no jogo da Pássaro (*Bird*).
+    - O pássaro voa e, dependendo de certas condições, ele muda sua direção.
+- Experimente jogar os níveis 1, 2 e 3.
+    - Nível 1 não tem condicional: prepara para nívei seguintes.
+        - Basta mudar para o ângulo correto.
+    - Nivel 2 e 3 usam expressões lógicas.
+        - Bloco "Não tem minhoca".
+- Acesse: https://blockly-games.appspot.com/bird?lang=pt-br&level=1
+
+---
+
+slideTitle: Google Blockly Game: Condicionais
+
+- Experimente, agora, jogar os níveis 4 e 5.
+    - A mudança do ângulo do pássaro está condicionada à posição no eixo X (nível 4) ou Y (nível 5).
+    - A expressão lógica envolve sinal de menor (<) ou maior (>).
+    - O bloco "Não tem minhoca" não será usado.
+- Acesse: https://blockly-games.appspot.com/bird?lang=pt-br&level=4
+
+---
+
+slideTitle: Google Blockly Code: Condicionais
+
+- No Blockly Code há blocos condicionais.
+- O mais importante deles está em:
+    - Lógica &rarr; se-faça
+
+.center[![:imageS width:13%;](imagens/se-faca.png)]
+
+- Usando a engrenagem azul, ele pode ser estendido para se-faça-senão:
+
+.center[![:imageS width:14%;](imagens/se-faca-senao.png)]
+
+---
+
+slideTitle: Google Blockly Code: Se-faça
+
+- Blocos dentro do .alert[**se-faça**] são executados somente se a condição lógica é **verdadeira**.
+    -  Caso não seja, avança-se para o bloco imediatamente após o se-faça.
+- Exemplos:
+
+.center[![:imageS width:80%;](imagens/se-faca_ex.png)]
+
+.center[![:imageS width:72%;](imagens/se-faca_ex2.png)]
+
+---
+
+slideTitle: Google Blockly Code: Se-faça-senão
+
+- Alterna a execução de acordo com a condição:
+    - Blocos dentro do **se-faça** são executados somente se a condição lógica é **verdadeira**.
+    - Blocos dentro do **senão** são executados somente se a condição lógica é **falsa**.
+- Exemplos:
+
+.center[![:imageS width:80%;](imagens/se-faca-senao_ex2.png)]
+
+---
+
+slideTitle: Exercício I
+
+#### Resolva as questões abaixo no Blockly Code:
+
+1. Obtenha um número e indique se ele é positivo.
+1. Obtenha dois números A e B e indique o resultado da soma deles. Caso A seja ímpar, deve-se somar 1 a ele antes de apresentar o resultado da soma.
+1. Obtenha um número e indique se ele é par ou ímpar.
+1. Obtenha três números A, B e C. Se A + B for menor que C, altere o valor de A para A + B. Caso contrário, altere o valor de A para A + C.
+
+---
+
+class: section-slide
+layout: false
+
+# Programação Visual: Expressões Lógicas
+
+---
+
+template: conteudo
+layout: true
+
+---
+
+slideTitle: Expressões Relacionais
+
+![:block](Definição:
+- São expressões lógicas que relacionam expressões aritméticas.
+)
+
+- Também apresenta resultado verdadeiro ou falso.
+    - Por isso, é uma expressão lógica!
+- Podem ser usadas como condição no se-faça ou se-faça-senão.
+    - Exemplo no Blockly Code (já visto):
+
+.center[![:imageS width:80%;](imagens/se-faca-senao_ex2.png)]
+
+---
+
+slideTitle: Expressões Relacionais
+
+- Operadores relacionais:
+
+| Operador  |Significado    |
+|-----------|---------------|
+| =         | Igual         |
+| >         | Maior         |
+| <         | Menor         |
+| &ge;      | Maior ou igual|
+| &le;      | Menor ou igual|
+| &ne;      | Diferente     |
+
+---
+
+slideTitle: Google Blockly Code: Expressões Relacionais
+
+- Podem ser acessadas no menu "Lógica".
+    - E os operadores podem ser alterados clicando na seta.
+
+.center[![:imageS width:17%;](imagens/exp_relacional.png)]
+
+- Os operandos são expressões aritméticas.
+    - Encontradas no menu "Matemática".
+
+---
+
+slideTitle: Google Blockly Code: Expressões Relacionais
+
+- Você pode testar imprimindo o resultado da expressão, como por exemplo:
+    - Lembrando que o resultado deve ser verdadeiro (*true*) ou falso (*false*).
+
+.center[![:imageS width:25%;](imagens/exp_relacional_ex.png)]
+
+- Outro exemplo, com expressão aritmética e variável:
+
+.center[![:imageS width:40%;](imagens/exp_relacional_ex2.png)]
+
+---
+
+slideTitle: Expressões Lógicas
+
+![:block](Definição:
+São expressões entre operandos lógicos que produzem um resultado lógico.
+)
+
+- Operadores lógicos:
+
+![:column 25%](&nbsp;)
+![:column 50%](
+| Operador          |Significado        |
+|-------------------|-------------------|
+| **não** (*not*\)  | Negação lógica    |
+| **e** (*and*\)    | Conjunção lógica  |
+| **ou** (*or*\)    | Disjunção lógica  |
+)
+
+---
+
+slideTitle: Expressões Lógicas (II)
+
+- Operandos de um expressão lógica podem ser:
+    - constante lógica: verdadeiro ou falso;
+    - variável lógica;
+    - expressão relacional.
+- Tabelas abaixo apresentam significado dos operadores:
+
+![:column 20%](
+A   | não(A\)
+:--:|:----------:
+V   | F
+F   | V
+)
+
+![:column 10%](&nbsp;)
+
+![:column 30%](
+A  | B  | A ou B
+:-:|:--:|:-----:
+V  | V  |V
+V  | F  |V
+F  | V  |V
+F  | F  |F
+)
+
+![:column 10%](&nbsp;)
+
+![:column 30%](
+A  | B  | A e B
+:-:|:--:|:-----:
+V  | V  |V
+V  | F  |F
+F  | V  |F
+F  | F  |F
+)
+
+---
+
+slideTitle: Expressões Lógicas (III)
+
+- O "não" sempre inverte o valor.
+    - Se é verdadeiro, passa a ser falso.
+    - Se é falso, passa a ser verdadeiro.
+- O "e" é apenas verdadeiro se os dois operandos forem verdadeiros.
+    - Basta um operando ser falso para o resultado ser falso.
+        - E nem precisa avaliar o outro operando.
+- O "ou" é apenas falso se os dois operandos forem falso.
+    - Basta um operando ser verdadeiro para o resultado ser verdadeiro.
+        - E nem precisa avaliar o outro operando.
+
+---
+
+slideTitle: Exemplos no Blockly Code
+
+![:column 60%](
+|Expressão  | Valor&nbsp;|
+|:--|:-----:|
+|![:imageS width:20%;](imagens/exp_logica_ex1.png\)  | F|
+|![:imageS width:36%;](imagens/exp_logica_ex2.png\)  | V|
+|![:imageS width:44%;](imagens/exp_logica_ex3.png\)  | F|
+|![:imageS width:44%;](imagens/exp_logica_ex4.png\)  | V|
+|![:imageS width:40%;](imagens/exp_logica_ex5.png\)  | V|
+|![:imageS width:86%;](imagens/exp_logica_ex6.png\)  | F|
+|![:imageS width:100%;](imagens/exp_logica_ex7.png\) | V|
+|![:imageS width:75%;](imagens/exp_logica_ex8.png\)  | V|
+|![:imageS width:60%;](imagens/exp_logica_ex9.png\)  | V|
+)
+
+![:column 10%](&nbsp;)
+
+![:column 30%](
+<br><br>
+
+Considere:
+
+Variável  | Valor
+:-:|:-----:
+x  | 15
+A  | F
+B  | V
+)
+
+---
+
+slideTitle: Expressões Lógicas nas Condicionais
+
+- O uso mais comum das expressões lógicas ocorre nas estruturas condicionais.
+    - se-faça ou se-faça-senão.
+- Servem para representar situações como:
+    - Se idade for maior ou igual a 18 e menor que 60, é adulto.
+    - Se um número é par então some 1 a ele.
+    - Se nome de usuário e senha estão corretos, permita o acesso.
+    - ...
+
+---
+
+slideTitle: Blockly Code: Expressões Lógicas nas Condicionais
+
+- Exemplo 1:
+
+.center[![:imageS width:80%;](imagens/se-faca-senao_exp_log.png)]
+
+- Exemplo 2:
+
+.center[![:imageS width:75%;](imagens/se-faca-senao_exp_log2.png)]
+
+---
+
+slideTitle: Exercício II
+
+#### Resolva os seguintes problemas no Google Blockly Code.
+
+1. Usando o bloco em Matemática &rarr; inteiro aleatório entre...
+.center[![:imageS width:40%;](imagens/inteiro_aleatorio.png)]
+<span style="margin-left: 45px; font-size:20px">.alert[a)] Sorteie um número entre 1 e 10, leia outro número do usuário e indique se ele acertou.<br>
+<span style="margin-left: 45px; font-size:20px">.alert[b)] Modifique sua solução para indicar caso o usuário tenha errado e peça para ele tentar novamente.
+1. Leia dois números e calcule a divisão entre eles. Caso a divisão não seja possível, informe isto ao usuário.
+1. Leia 3 números do usuário e indique se eles são iguais ou diferentes.
+1. Leia um número e indique se está no intervalo [0, 100] ou não.
+
+<!-- COLOCAR ALGO SOBRE LÓGICA PROPOSICIONAL? -->
+
+---
+
+class: section-slide
+layout: false
+
+# Programação Visual: Condicionais Aninhadas
+
+---
+
+template: conteudo
+layout: true
+
+---
+
+slideTitle: Blockly Game: Condicionais Aninhadas
+
+
+- Aninhamento de estruturas condicionais:
+    - Colocar estrutura condicional dentro de outra.
+    - Gera níveis estruturais.
+- Experimente jogar os níveis 6 e 7 do jogo Pássaro (*Bird*).
+    - Acesse: https://blockly-games.appspot.com/bird?lang=pt&level=6
+
+---
+
+slideTitle: Blockly Code: Condicionais Aninhadas
+
+- O bloco pode ser incluído dentro do "se-faça" ou do "senão".
+- No se-faça:
+
+.center[![:imageS width:75%;](imagens/se-faca_aninhado.png)]
+
+---
+
+slideTitle: Blockly Code: Condições Aninhadas (II)
+
+- No senão:
+
+.center[![:imageS width:70%;](imagens/se-faca-senao_aninhado.png)]
+
+- Que pode ser substituído por (configurar com engrenagem):
+
+.center[![:imageS width:70%;](imagens/se-faca-senao_aninhado2.png)]
+
+---
+
+slideTitle: Exercício Resolvido (parte 1)
+
+- Escreva um algoritmo que leia três valores inteiros e imprima o menor deles.
+- Solução:
+
+.center[![:imageS width:80%;](imagens/ex1_parte1.png)]
+
+---
+
+slideTitle: Exercício Resolvido (parte 2)
+
+- Escreva um algoritmo que leia três valores inteiros e imprima o menor deles.
+- Solução:
+
+.center[![:imageS width:80%;](imagens/ex1_parte2.png)]
+
+---
+
+slideTitle: Exercício Resolvido (parte 3)
+
+- Escreva um algoritmo que leia três valores inteiros e imprima o menor deles.
+- Solução:
+
+.center[![:imageS width:80%;](imagens/ex1_completo.png)]
+
+---
+
+slideTitle: Exercício Resolvido (parte 4)
+
+- Outra solução:
+    - Usando uma variável chamada menor.
+
+.center[![:imageS width:80%;](imagens/ex1_completo_sol2.png)]
+
+---
+
+slideTitle: Exercício III
+
+- Completar níveis do jogo do Pássaro (*Bird*).
+    - Mais difíceis.
+
+#### Resolver os problemas abaixo no Google Blockly Code:
+
+1. Dados três valores inteiros X, Y, Z, indicar se eles podem ser os comprimentos dos lados de um triângulo e, se forem, indicar se é um triângulo equilátero, isósceles ou escaleno. Se eles não formarem um triângulo, escrever uma mensagem.
+    - Sabe-se que o comprimento de cada lado de um triângulo é menor do que a soma dos comprimentos dos outros dois lados.
+1. Faça um algoritmo que leia três notas de um aluno e calcule a média final deste aluno. Se a nota obtida for maior ou igual a 6.0, indique que o aluno foi aprovado; se estiver no intervalo [4, 6.0), VS; e menor que 4.0, reprovado.
+
+    </textarea>
+
+    <script src="../template/js/remark-latest.min.js" type="text/javascript"></script>
+    <script src="../template/js/macros.js" type="text/javascript"></script>
+    <script src="../template/js/callbacks.js" type="text/javascript"></script>
+    <script src="../template/js/katex.min.js"></script>
+    <script src="../template/js/auto-render.min.js"></script>
+    <link rel="stylesheet" href="../template/css/katex.min.css">
+    <script type="text/javascript">
+      var renderMath = function() {
+        renderMathInElement(document.body, {delimiters: [
+           {left: "$$", right: "$$", display: true},
+           {left: "$", right: "$", display: false},
+           {left: "\\[", right: "\\]", display: true},
+           {left: "\\(", right: "\\)", display: false},
+        ]});
+      }
+      var slideshow = remark.create({highlightStyle: "github", highlightLines: "true", highlightSpans: "true", slideNumberFormat: onSlideCallback}, renderMath);
+
+      slideshow.on('afterShowSlide', function (s) {
+
+          var slide = document.getElementsByClassName('remark-visible')[0];
+          var iframeList = slide.getElementsByClassName('scaled-frame-md');
+
+          var i;
+          for (i = 0; i < iframeList.length; i++) {
+
+              var iframe = iframeList[i];
+
+              if (typeof iframe.attributes.after !== 'undefined') continue ;
+
+              var src = iframe.src;
+              iframe.src = '';
+              iframe.src = src;
+
+              var att = document.createAttribute("after");
+              att.value = 'true';
+              iframe.attributes.setNamedItem(att);
+          }
+
+      });
+    </script>
+</body>
+</html>

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Programação de Computadores: Aula 5</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <link rel="stylesheet" type="text/css" href="../template/css/roboto.css">
+    <link rel="stylesheet" type="text/css" href="../template/css/general.css">
+    <link rel="stylesheet" type="text/css" href="../template/css/code.css">
+    <link rel="stylesheet" type="text/css" href="../template/css/cover.css">
+    <link rel="stylesheet" type="text/css" href="../template/css/section.css">
+    <link rel="stylesheet" type="text/css" href="../template/css/elements.css">
+    <link rel="stylesheet" type="text/css" href="../template/css/table.css">
+    <link rel="stylesheet" type="text/css" href="../template/css/block.css">
+  </head>
+  <body>
+
+    <textarea id="source">
+
+class: cover-slide
+
+![:cover](
+Programação de Computadores
+Aula 5: Programação Visual - Repetições
+Fernanda Passos
+../template/img/logo.svg
+)
+
+---
+
+class: section-slide
+
+# Programação Visual: Repetições
+
+---
+
+class: middle
+layout: true
+name: conteudo
+
+.title[
+{{slideTitle}}
+<hr>]
+
+---
+
+slideTitle: Estruturas de Repetição
+
+- Também são estruturas que mudam o controle da execução.
+- Em programação, .alert[**repetições**] servem repetir um conjunto de blocos.
+    - Quantas vezes for especificado.
+- Existem alguns tipos de estruturas de repetição:
+    - Repita-até (*repeat*)
+    - Para-faça (*for*)
+    - Enquanto-faça (*while*)
+- Vamos ver exemplos no Google Blockly Game.
+
+<!--
+.center[![:imageS width:40%;](imagens/criar_variavel.png)]
+-->
+
+---
+
+slideTitle: Google Blockly Game: Repetições
+
+- Podemos notar repetições no jogo do Labirinto (*Maze*).
+    - O personagem deve caminhar pelo caminho disponível até chegar no ponto final.
+- Experimente jogar os níveis 3, 4 e 5.
+    - Deve-se indicar quantas vezes repetir na estrutura "repita-até".
+- Acesse: https://blockly-games.appspot.com/maze?lang=pt-br&level=3
+- O jogo da Tartaruga (*Turtle*) também faz uso desta estrutura.
+    - Os desenhos devem ser feitos na tela seguindo traços básicos que devem ser repetidos.
+- Experimente jogar os níveis 1, 2, 3 e 4.
+- Acesse: https://blockly-games.appspot.com/turtle?lang=pt-br&level=1
+
+---
+
+slideTitle: Google Blockly Code: Repetições
+
+- No Blockly Code há blocos de repetição.
+- Veremos aqui os blocos em:
+    - Laços &rarr; repita $N$ vezes
+    - Laços &rarr; repita-enquanto (Enquanto)
+    - Laços &rarr; contar-com (Para-faça)
+
+![:column 30%](
+.center[![:imageS width:70%;](imagens/repita-n-vezes.png\)]
+)
+
+![:column 30%](
+.center[![:imageS width:70%;](imagens/repita-enquanto.png\)]
+)
+
+![:column 40%](
+.center[![:imageS width:100%;](imagens/contar-com.png\)]
+)
+
+---
+
+class: section-slide
+layout: false
+
+# Programação Visual: Expressões Lógicas
+
+---
+
+template: conteudo
+layout: true
+
+---
+
+    </textarea>
+
+    <script src="../template/js/remark-latest.min.js" type="text/javascript"></script>
+    <script src="../template/js/macros.js" type="text/javascript"></script>
+    <script src="../template/js/callbacks.js" type="text/javascript"></script>
+    <script src="../template/js/katex.min.js"></script>
+    <script src="../template/js/auto-render.min.js"></script>
+    <link rel="stylesheet" href="../template/css/katex.min.css">
+    <script type="text/javascript">
+      var renderMath = function() {
+        renderMathInElement(document.body, {delimiters: [
+           {left: "$$", right: "$$", display: true},
+           {left: "$", right: "$", display: false},
+           {left: "\\[", right: "\\]", display: true},
+           {left: "\\(", right: "\\)", display: false},
+        ]});
+      }
+      var slideshow = remark.create({highlightStyle: "github", highlightLines: "true", highlightSpans: "true", slideNumberFormat: onSlideCallback}, renderMath);
+
+      slideshow.on('afterShowSlide', function (s) {
+
+          var slide = document.getElementsByClassName('remark-visible')[0];
+          var iframeList = slide.getElementsByClassName('scaled-frame-md');
+
+          var i;
+          for (i = 0; i < iframeList.length; i++) {
+
+              var iframe = iframeList[i];
+
+              if (typeof iframe.attributes.after !== 'undefined') continue ;
+
+              var src = iframe.src;
+              iframe.src = '';
+              iframe.src = src;
+
+              var att = document.createAttribute("after");
+              att.value = 'true';
+              iframe.attributes.setNamedItem(att);
+          }
+
+      });
+    </script>
+</body>
+</html>

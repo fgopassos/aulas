@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Programação de Computadores: Aula 3</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <link rel="stylesheet" type="text/css" href="../template/css/roboto.css">
+    <link rel="stylesheet" type="text/css" href="../template/css/general.css">
+    <link rel="stylesheet" type="text/css" href="../template/css/code.css">
+    <link rel="stylesheet" type="text/css" href="../template/css/cover.css">
+    <link rel="stylesheet" type="text/css" href="../template/css/section.css">
+    <link rel="stylesheet" type="text/css" href="../template/css/elements.css">
+    <link rel="stylesheet" type="text/css" href="../template/css/table.css">
+    <link rel="stylesheet" type="text/css" href="../template/css/block.css">
+  </head>
+  <body>
+
+    <textarea id="source">
+
+class: cover-slide
+
+![:cover](
+Programação de Computadores
+Aula 3: Programação Visual (parte II\)
+Fernanda Passos
+../template/img/logo.svg
+)
+
+---
+
+class: section-slide
+
+# Programação Visual: Variáveis
+
+---
+
+class: middle
+layout: true
+name: conteudo
+
+.title[
+{{slideTitle}}
+<hr>]
+
+---
+
+slideTitle: Google Blockly Code: Variáveis
+
+- Em programação, o uso de .alert[**variáveis**] é essencial.
+- Elas servem para guardar informações que podem ser recuperadas e modificadas.
+- No Blockly Code elas podem ser criadas em:
+    - Variáveis &rarr; Criar variável...
+
+.center[![:imageS width:40%;](imagens/criar_variavel.png)]
+
+---
+
+slideTitle: Google Blockly Code: Variáveis
+
+- Bastar dar um nome para ela.
+    - Toda variável precisa de um nome.
+    - É o **identificador** dela.
+- Ao criar uma variável no Blockly Code, que chamaremos de $x$.
+
+.center[![:imageS width:40%;](imagens/criar_variavel2.png)]
+
+---
+
+slideTitle: Google Blockly Code: Variáveis
+
+![:column 70%](
+- Definir (atribuir\) valor.
+- Alterar valor adicionando valor numérico.
+    - Serve apenas para variáveis numéricas.
+- Recuperar (usar\) valor.
+)
+
+![:column 30%](
+    .center[![:imageS width:70%;](imagens/definir_variavel.png\)]
+
+    .center[![:imageS width:75%;](imagens/alterar_variavel.png\)]
+
+    .center[![:imageS width:30%;](imagens/usar_variavel.png\)]
+)
+
+---
+
+slideTitle: Blockly Code: Uso de Variáveis
+
+- Apenas imprimir seu valor (atribuição e uso):
+
+.center[![:imageS width:25%;](imagens/var_ex.png)]
+
+- Imprimir valor modificado (atribuição, alteração e uso):
+
+.center[![:imageS width:25%;](imagens/var_ex2.png)]
+
+- Imprimir valor modificado (atribuição e uso):
+
+.center[![:imageS width:35%;](imagens/var_ex3.png)]
+
+---
+
+slideTitle: Blockly Code: Uso de Variáveis (II)
+
+- Note que estas duas operações são equivalentes:
+
+<br>
+
+![:column 40%](
+.center[![:imageS width:70%;](imagens/var_ex2.png\)]
+)
+
+![:column 10%; font-size:50px;](&hArr;)
+
+![:column 40%](
+.center[![:imageS width:100%;](imagens/var_ex2_eq.png\)]
+)
+
+---
+
+slideTitle: Exercício I
+
+#### Resolva os exercícios abaixo no Google Blockly Code.
+
+1. Crie uma variável chamada 'var1' com o valor 100 e a imprima.
+1. Crie uma variável chamada 'var2' com o valor inicial 100, multiplique-a por 7 e a imprima.
+1. Crie duas variáveis, var1 e var2, com os respectivos valores 19 e 13. Some-os e imprima o resultado.
+1. Crie uma variável chamada 'var3' com o valor inicial 27. Some-a à potência de 2 de seu valor e imprima resultado.
+
+Acesse: https://blockly-demo.appspot.com/static/demos/code/index.html?lang=pt-br
+
+---
+
+class: section-slide
+layout: false
+
+# Programação Visual: Imprimindo Dados Agrupados
+
+---
+
+template: conteudo
+layout: true
+
+---
+
+slideTitle: Blockly Code: Agrupando Mensagens
+
+- É possível agrupar textos e números para formar uma mensagem.
+    - Diferentes tipos de combinações.
+- O bloco utilizado para isso está em:
+    - Texto &rarr; criar texto com
+
+.center[![:imageS width:25%;](imagens/criar_texto_com.png)]
+
+- Exemplo:
+
+.center[![:imageS width:60%;](imagens/criar_texto_com_ex.png)]
+
+---
+
+slideTitle: Blockly Code: Agrupando Mensagens
+
+- Para agrupar mais itens, use a engrenagem azul e adicione mais blocos "item".
+
+.center[![:imageS width:30%;](imagens/criar_texto_com_escolha.png)]
+
+---
+
+slideTitle: Blockly Code: Agrupando Mensagens
+
+- Exemplo:
+
+.center[![:imageS width:50%;](imagens/criar_texto_com_ex2.png)]
+
+- Executando, a mensagem na tela será:
+
+.center[![:imageS width:30%;](imagens/criar_texto_com_ex2_tela.png)]
+
+---
+
+class: section-slide
+layout: false
+
+# Programação Visual: Entrada e Saída
+
+---
+
+template: conteudo
+layout: true
+
+---
+
+slideTitle: Google Blockly Code: Entrada e Saída
+
+- Em programação, usamos o termo *Entrada e Saída (E/S)* para designar como os dados são inseridos e apresentados.
+- Os modos mais comuns são:
+    - Entrada: teclado
+    - Saída: tela
+
+.center[![:imageS width:40%;](imagens/es.jpg)]
+
+---
+
+slideTitle: Google Blockly Code: Entrada e Saída
+
+- A saída, já vimos:
+    - Bloco em: Texto &rarr; imprime
+
+.center[![:imageS width:25%;](imagens/imprime.png)]
+
+- A entrada está em:
+    - Texto &rarr; Pede um ... com a mensagem
+
+.center[![:imageS width:55%;](imagens/leitura.png)]
+
+---
+
+slideTitle: Google Blockly Code: Entrada de Dados
+
+- É possível escolher entre dois tipos de entrada:
+    - Texto.
+    - Número.
+
+.center[![:imageS width:45%;](imagens/leitura_tipos.png)]
+
+- E sempre que um texto ou número é pedido, pode-se escrever uma mensagem.
+    - Por exemplo:
+
+.center[![:imageS width:80%;](imagens/leitura_ex.png)]
+
+---
+
+slideTitle: Google Blockly Code: Entrada de Dados
+
+- Se executar, este é o resultado:
+
+.center[![:imageS width:25%;](imagens/leitura_tela.png)]
+
+- Repare que agora a mensagem tem uma caixa de entrada.
+    - Para que o usuário entre com um valor.
+    - Lembre-se: você, programador, escreve um programa para um usuário.
+
+---
+
+slideTitle: Google Blockly Code: Entrada de Dados
+
+- Podemos fazer o programa em blockly imprimir o texto de entrada:
+
+.center[![:imageS width:80%;](imagens/leitura_ex2.png)]
+
+- Produz 2 janelas:
+
+![:column 50%](
+.center[Entrada:
+
+![:imageS width:55%;](imagens/leitura_tela2.png\)]
+)
+
+![:column 50%](
+.center[Saída:
+
+![:imageS width:75%;](imagens/leitura_tela3.png\)]
+)
+
+---
+
+slideTitle: Google Blockly Code: Entrada de Dados
+
+- Uso com bloco de uma variável.
+    - Bastante comum.
+    - Guarda informação de entrada na variável.
+- Exemplo:
+
+.center[![:imageS width:80%;](imagens/leitura_ex_var.png)]
+
+---
+
+slideTitle: Google Blockly Code: Entrada de Dados
+
+#### Seu programa agora pode, por exemplo:
+
+- Calcular a raiz quadrada de um dado número:
+
+.center[![:imageS width:80%;](imagens/leitura_ex_var2.png)]
+
+- Ou calcular a potência de uma base elevada a um expoente:
+
+.center[![:imageS width:70%;](imagens/leitura_ex_var3.png)]
+
+---
+
+slideTitle: Exercício II
+
+#### Resolva os exercícios abaixo no Google Blockly Code.
+
+
+1. Calcule o valor da conversão em dólar de um valor lido em real. Sua solução também deverá ler o valor da cotação do dólar.
+1. Monte uma solução que leia uma temperatura em graus Celsius e converta para graus Fahrenheit, cuja fórmula de conversão é: <span style="font-size: 18px;"> $$\frac{9 \times Graus\\_Celsius + 160}{5}$$ </span>
+1. Monte uma solução que leia dois valores, representando o raio e altura de uma lata e calcule o seu volume, cuja fórmula é dada por: $VOLUME = 3.1415 × RAIO^2 \times ALTURA$
+
+Acesse: https://blockly-demo.appspot.com/static/demos/code/index.html?lang=pt-br
+
+---
+
+slideTitle: Exercício III
+
+#### Resolva os exercícios abaixo no Google Blockly Code.
+
+
+1. <span style="font-size: 18px;"> Um eletricista precisa comprar fio que irá passar, pelo telhado, por toda a diagonal de uma casa de formato retangular. Como ele não tem condições de medir a diagonal com precisão, a solução alternativa que ele encontrou foi medir os lados da casa, sabendo que a diagonal pode ser calculada com base nos lados pelo Teorema de Pitágoras ($a^2 = b^2 + c^2$). Monte uma solução que calcule a quantidade mı́nima necessária de fio a ser comprada. </span>
+1. <span style="font-size: 18px"> Um professor atribui pesos de 1 a 4 para as notas de quatro avaliações. A nota é calculada por meio da média ponderada $(N_1 + N_2 \times 2 + N_3 \times 3 + N_4 \times 4)/10$, onde $N_1$ é a nota da primeira avaliação, $N_2$ a da segunda, etc. Monte uma solução que calcula a média de um aluno. </span>
+
+Acesse: https://blockly-demo.appspot.com/static/demos/code/index.html?lang=pt-br
+
+    </textarea>
+
+    <script src="../template/js/remark-latest.min.js" type="text/javascript"></script>
+    <script src="../template/js/macros.js" type="text/javascript"></script>
+    <script src="../template/js/callbacks.js" type="text/javascript"></script>
+    <script src="../template/js/katex.min.js"></script>
+    <script src="../template/js/auto-render.min.js"></script>
+    <link rel="stylesheet" href="../template/css/katex.min.css">
+    <script type="text/javascript">
+      var renderMath = function() {
+        renderMathInElement(document.body, {delimiters: [
+           {left: "$$", right: "$$", display: true},
+           {left: "$", right: "$", display: false},
+           {left: "\\[", right: "\\]", display: true},
+           {left: "\\(", right: "\\)", display: false},
+        ]});
+      }
+      var slideshow = remark.create({highlightStyle: "github", highlightLines: "true", highlightSpans: "true", slideNumberFormat: onSlideCallback}, renderMath);
+
+      slideshow.on('afterShowSlide', function (s) {
+
+          var slide = document.getElementsByClassName('remark-visible')[0];
+          var iframeList = slide.getElementsByClassName('scaled-frame-md');
+
+          var i;
+          for (i = 0; i < iframeList.length; i++) {
+
+              var iframe = iframeList[i];
+
+              if (typeof iframe.attributes.after !== 'undefined') continue ;
+
+              var src = iframe.src;
+              iframe.src = '';
+              iframe.src = src;
+
+              var att = document.createAttribute("after");
+              att.value = 'true';
+              iframe.attributes.setNamedItem(att);
+          }
+
+      });
+    </script>
+</body>
+</html>

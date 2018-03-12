@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Programação de Computadores: Aula 2</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <link rel="stylesheet" type="text/css" href="../template/css/roboto.css">
+    <link rel="stylesheet" type="text/css" href="../template/css/general.css">
+    <link rel="stylesheet" type="text/css" href="../template/css/code.css">
+    <link rel="stylesheet" type="text/css" href="../template/css/cover.css">
+    <link rel="stylesheet" type="text/css" href="../template/css/section.css">
+    <link rel="stylesheet" type="text/css" href="../template/css/elements.css">
+    <link rel="stylesheet" type="text/css" href="../template/css/table.css">
+    <link rel="stylesheet" type="text/css" href="../template/css/block.css">
+  </head>
+  <body>
+
+    <textarea id="source">
+
+class: cover-slide
+
+![:cover](
+Programação de Computadores
+Aula 2: Programação Visual
+Fernanda Passos
+../template/img/logo.svg
+)
+
+---
+
+class: section-slide
+
+# Programação Visual
+
+---
+
+class: middle
+layout: true
+name: conteudo
+
+.title[
+{{slideTitle}}
+<hr>]
+
+---
+
+slideTitle: Google Blockly Game
+
+- Em programação, lidamos o tempo todo com blocos de código.
+- Daí, a ideia de criar um ambiente de aprendizado em .alert[blocos].
+- Inicialmente pensado para ensinar crianças.
+
+.center[![:imageS width:55%;](imagens/blockly_children.jpg)]
+
+- Por que não para jovens e adultos?
+
+---
+
+slideTitle: Google Blockly Game
+
+1. Problema:
+    - Resolver o objetivo do jogo!
+    - e.g., no jogo *maze*, fazer personagem chegar até o ponto final.
+2. Algoritmo:
+    - Criar uma sequência lógica dos blocos disponíveis.
+    - Brincar de "lego"!
+3. Programação:
+    - Visual, através de blocos.
+    - Arrastar blocos que se interligam em uma área dedicada para isso.
+4. Teste e Prova:
+    - executar a sequência de blocos.
+
+---
+
+class: section-slide
+layout: false
+
+# Programação Visual Usando Jogos
+
+---
+
+template: conteudo
+layout: true
+
+---
+
+slideTitle: Primeira Tela
+
+- Acessar site: https://blockly-games.appspot.com/
+
+<div class="wrapper-md"><iframe class="scaled-frame-md" src="https://blockly-games.appspot.com/"></iframe></div>
+
+<!---
+.center[![:imageS width:90%;](imagens/blocklygame2.png)]
+-->
+
+---
+
+slideTitle: Jogos Interessantes
+
+- .alert[Labirinto (*Maze*)]
+    - Objetivo: fazer personagem chegar ao ponto final do labirinto, coordenando seu caminho.
+        - 10 níveis.
+- .alert[Pássaro (*Bird*)]
+    - Objetivo: fazer pássaro voar para o ninho direcionado-o no mapa.
+        - 10 níveis.
+- .alert[Tartaruga (*Turtle*)]
+    - Objetivo: desenhar figuras geométricas.
+        - 10 níveis.
+- .alert[Filme (*Movie*)]
+    - Objetivo: desenhar formas geométricas com movimento seguindo gabarito.
+        - 10 níveis.
+
+---
+
+slideTitle: Labirinto (*Maze*)
+
+- Acessar site: https://blockly-games.appspot.com/maze?lang=pt
+
+<div class="wrapper-md"><iframe class="scaled-frame-md" src="https://blockly-games.appspot.com/maze"></iframe></div>
+
+---
+
+slideTitle: Pássaro (*Bird*)
+
+- Acessar site: https://blockly-games.appspot.com/bird?lang=pt
+
+<div class="wrapper-md"><iframe class="scaled-frame-md" src="https://blockly-games.appspot.com/bird"></iframe></div>
+
+---
+
+slideTitle: Pássaro (*Turtle*)
+
+- Acessar site: https://blockly-games.appspot.com/turtle?lang=pt
+
+<div class="wrapper-md"><iframe class="scaled-frame-md" src="https://blockly-games.appspot.com/turtle"></iframe></div>
+
+---
+
+slideTitle: Filme (*Movie*)
+
+- Acessar site: https://blockly-games.appspot.com/movie?lang=pt
+
+<div class="wrapper-md"><iframe class="scaled-frame-md" src="https://blockly-games.appspot.com/movie"></iframe></div>
+
+---
+
+slideTitle: Começando a Jogar...
+
+- .alert[Labirinto]: níveis 1 e 2.
+- Vamos explorar o que tem de fundamental em programação.
+    - O passo a passo.
+- Blocos devem ser conectados um após o outro.
+    - Repare nos encaixes.
+- Blocos são executados um por vez, na ordem de cima para baixo.
+    - Mesma ideia de programação.
+    - Nesse contexto, cada comando corresponde a um bloco.
+
+---
+
+class: section-slide
+layout: false
+
+# Programação Visual com Blocos
+
+---
+
+template: conteudo
+layout: true
+
+---
+
+slideTitle: Google Blockly Code
+
+- O Google desenvolveu uma ferramenta para programação com blocos.
+    - Não serve para escrever programas em geral.
+    - É limitada, porém oferece um bom ambiente de aprendizado.
+- Apresenta:
+    - Menu de blocos correspondentes às linguagens de programação reais.
+    - Área de encaixe de blocos: programação.
+    - Botão para executar os blocos.
+    - Conversor para linguagens reais.
+        - Inclusive Python.
+
+---
+
+slideTitle: Google Blockly Code
+
+- Acesse:
+    - https://blockly-demo.appspot.com/static/demos/code/index.html?lang=pt-br
+
+<div class="wrapper-md"><iframe class="scaled-frame-md" src="https://blockly-demo.appspot.com/static/demos/code/index.html?lang=pt-br"></iframe></div>
+
+
+---
+
+class: section-slide
+layout: false
+
+# Blockly Code: Imprimindo Informação
+
+---
+
+template: conteudo
+layout: true
+
+---
+
+slideTitle: Imprimindo texto no Blockly Code
+
+- Através do bloco Texto &rarr; imprime.
+
+.center[![:imageS width:30%;](imagens/imprime.png)]
+
+- Imprime textos, números, expressões, variáveis.
+- Exemplo:
+
+.center[![:imageS width:35%;](imagens/imprime_ex.png)]
+
+- Se executar:
+
+.center[![:imageS width:30%;](imagens/tela_imprime_ex.png)]
+
+---
+
+slideTitle: Imprimindo texto no Blockly Code
+
+- Há também o bloco de texto.
+
+.center[![:imageS width:12%;](imagens/bloco_texto.png)]
+
+- Exemplo de uso:
+
+.center[![:imageS width:35%;](imagens/bloco_texto_ex.png)]
+
+- Se executar:
+
+.center[![:imageS width:30%;](imagens/tela_bloco_texto_ex.png)]
+
+---
+
+class: section-slide
+layout: false
+
+# Blockly Code: Expressões Numéricas
+
+---
+
+template: conteudo
+layout: true
+
+---
+
+slideTitle: Expressões Matemáticas no Blockly Code
+
+![:column 45%](
+- Número:
+
+.center[![:imageS width:20%;](imagens/bloco_numero.png\)]
+
+- Expressões entre dois termos:
+
+.center[![:imageS width:60%;](imagens/bloco_expressao.png\)]
+)
+
+![:column 10%](&nbsp;)
+
+![:column 45%](
+<br>
+<br>
+<br>
+<br>
+- As operações são:
+    - Adição (+\)
+        - Exemplo: 10 + 2 = 12
+    - Subtração (-\)
+        - Exemplo: 10 - 2 = 8
+    - Multiplicação (&times;\)
+        - Exemplo: 10 &times; 2 = 20
+    - Divisão (&divide;\)
+        - Exemplo: 10 &divide; 2 = 5
+    - Potência (^\)
+        - Exemplo: 10 ^ 2 = 100
+)
+
+---
+
+slideTitle: Expressões Matemáticas no Blockly Code (II)
+
+- Expressões com um termo:
+
+.center[![:imageS width:32%;](imagens/bloco_expressao2.png)]
+
+
+![:column 45%](
+- As operações são:
+    - Raiz quadrada (sqrt\)
+        - Exemplo: raiz_quadrada(9\) = 3
+    - Absoluto
+        - Exemplo: absoluto(-9\) = 9
+    - Negação (-\)
+        - Exemplo: - 9 = -9
+)
+![:column 10%](&nbsp;)
+![:column 45%](
+- Mais operações:
+    - Logaritmo Natural (ln\)
+        - Exemplo: ln(e\) = 1
+    - Logaritmo na Base 10 (log10\)
+        - Exemplo: log10(100\) = 2
+    - Potência na Base e (e^\)
+        - Exemplo: e^1 = e
+    - Potência na Base 10 (10^\)
+        - Exemplo: 10^2 = 100
+)
+
+---
+
+slideTitle: Expressões Matemáticas Aninhadas
+
+- É possível resolver expressões aninhando vários termos.
+    - Expressões de expressões.
+- Exemplo: $\scriptsize{4 + 31 - 2 \times 7}$
+
+.center[![:imageS width:50%;](imagens/expressao_aninhada.png)]
+
+- Exemplo: $\scriptsize{-\sqrt{3^2 + 4^2}}$
+
+.center[![:imageS width:70%;](imagens/expressao_aninhada2.png)]
+
+---
+
+slideTitle: Exercícios
+
+#### Experimente imprimir no Google Blockly Code as seguintes expressões:
+
+1. $\scriptsize{10}$
+2. $\scriptsize{123 + 89}$
+3. $\scriptsize{\sqrt{1024}}$
+4. $\scriptsize{\frac{512}{128} - 1}$
+5. $\scriptsize{\sqrt{99 + 45}}$
+6. $\scriptsize{|21 \times 7 - 10^3|}$
+7. $\scriptsize{-\frac{\sqrt{20-4}}{log_{10}100}}$
+
+
+- Acesse: https://blockly-demo.appspot.com/static/demos/code/index.html?lang=pt-br
+
+    </textarea>
+
+    <script src="../template/js/remark-latest.min.js" type="text/javascript"></script>
+    <script src="../template/js/macros.js" type="text/javascript"></script>
+    <script src="../template/js/callbacks.js" type="text/javascript"></script>
+    <script src="../template/js/katex.min.js"></script>
+    <script src="../template/js/auto-render.min.js"></script>
+    <link rel="stylesheet" href="../template/css/katex.min.css">
+    <script type="text/javascript">
+      var renderMath = function() {
+        renderMathInElement(document.body, {delimiters: [
+           {left: "$$", right: "$$", display: true},
+           {left: "$", right: "$", display: false},
+           {left: "\\[", right: "\\]", display: true},
+           {left: "\\(", right: "\\)", display: false},
+        ]});
+      }
+      var slideshow = remark.create({highlightStyle: "github", highlightLines: "true", highlightSpans: "true", slideNumberFormat: onSlideCallback}, renderMath);
+
+      slideshow.on('afterShowSlide', function (s) {
+
+          var slide = document.getElementsByClassName('remark-visible')[0];
+          var iframeList = slide.getElementsByClassName('scaled-frame-md');
+
+          var i;
+          for (i = 0; i < iframeList.length; i++) {
+
+              var iframe = iframeList[i];
+
+              if (typeof iframe.attributes.after !== 'undefined') continue ;
+
+              var src = iframe.src;
+              iframe.src = '';
+              iframe.src = src;
+
+              var att = document.createAttribute("after");
+              att.value = 'true';
+              iframe.attributes.setNamedItem(att);
+          }
+
+      });
+    </script>
+</body>
+</html>
